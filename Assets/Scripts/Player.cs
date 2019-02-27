@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    [SerializeField] int health;
+    [SerializeField] int health { get; set; }
     [SerializeField] int xSpeed;
     [SerializeField] int ySpeed;
-    
+    Health healthController;
 
     Rigidbody2D rb;
 
     [SerializeField] bool IsinitialWall;
 
 	void Start () {
+        health = 3;
         IsinitialWall = true;
 
         rb = GetComponent<Rigidbody2D>();
-
+        healthController = GetComponent<Health>(); 
         rb.velocity = new Vector3(rb.velocity.x, 2, 0);
        
         
 
 	}
+
+    public int getHealth()
+    {
+        return health;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,6 +43,15 @@ public class Player : MonoBehaviour {
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
             IsinitialWall = !IsinitialWall;
+        }
+        if(other.gameObject.CompareTag("Obstacle"))
+        {
+            healthController.RemoveLife();
+            Debug.Log("assets");
+        }
+        if(other.gameObject.CompareTag("Life"))
+        {
+            healthController.AddLife();
         }
 
     }
