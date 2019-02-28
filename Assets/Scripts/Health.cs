@@ -8,6 +8,7 @@ public class Health : MonoBehaviour {
     // Use this for initialization
     
     [SerializeField] int health;
+    [SerializeField] int maxHealth=3;
     [SerializeField] Sprite fullHeart;
     [SerializeField] Sprite emptyHeart;
     [SerializeField] Image[] hearts;
@@ -20,15 +21,21 @@ public class Health : MonoBehaviour {
 
     public void RemoveLife()
     {
-        hearts[health-1].sprite = emptyHeart;
-        health--;
+        if (maxHealth - health == 1)
+        {
+            hearts[health - 1].sprite = emptyHeart;
+            health--;
+        }
 
     }
 
     public void AddLife()
     {
-        health++;
-        hearts[health-1].sprite = fullHeart;
+        if (health < maxHealth)
+        {
+            health++;
+            hearts[health - 1].sprite = fullHeart;
+        }
     }
 	
 	// Update is called once per frame
