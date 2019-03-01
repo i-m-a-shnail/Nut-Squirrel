@@ -59,8 +59,10 @@ public class Player : MonoBehaviour {
         }
         if(other.gameObject.CompareTag("Speed"))
         {
-            StartCoroutine(SpeedPowerUp());
+            StartCoroutine(SpeedPowerUp());      
         }
+        //Destroy(other.gameObject);
+
     }
 
     void flipPlayer()
