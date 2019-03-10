@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
-    [SerializeField] int health { get; set; }
+    [SerializeField] int health=3;
+    public int coinsAmount;
     [SerializeField] int xSpeed;
     [SerializeField] int ySpeed;
     Health healthController;
@@ -18,13 +20,14 @@ public class Player : MonoBehaviour {
         health = 3;
         IsinitialWall = true;
         start = true;
-
+        SaveManager.SavePlayer(this);
         rb = GetComponent<Rigidbody2D>();
         healthController = GetComponent<Health>();
         playerSprite = GetComponentInChildren<SpriteRenderer>();
         rb.velocity = new Vector3(rb.velocity.x, 2, 0);
 
 
+        coinsAmount = SceneSave.Instance.coinsAmount;
 
     }
 
@@ -36,6 +39,8 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         SwitchPlatform();
+
+        Debug.Log(SaveManager.LoadPlayer().coinsAmount + "SAVEMANAGER");
 
     }
 
@@ -60,6 +65,17 @@ public class Player : MonoBehaviour {
         if(other.gameObject.CompareTag("Speed"))
         {
             StartCoroutine(SpeedPowerUp());      
+        }
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            coinsAmount++;
+        }
+        if(other.gameObject.CompareTag("Finish"))
+        {
+            //SaveManager.SavePlayer(this);
+            playerSceneStatsSave();
+            SceneManager.LoadScene("Level 2");
+            
         }
         //Destroy(other.gameObject);
 
@@ -98,12 +114,17 @@ public class Player : MonoBehaviour {
 
     }
 
+    private void playerSceneStatsSave()
+    {
+        SceneSave.Instance.coinsAmount = coinsAmount;
+    }
+
     IEnumerator SpeedPowerUp()
     {
         rb.velocity = new Vector3(rb.velocity.x, 5 * rb.velocity.y, 0);
-        Debug.Log("current speed: " + rb.velocity.y);
+        //Debug.Log("current speed: " + rb.velocity.y);
         yield return new WaitForSeconds(5);
         rb.velocity = new Vector3(rb.velocity.x, 2, 0);
-        Debug.Log("after speed: " + rb.velocity.y);
+      //  Debug.Log("after speed: " + rb.velocity.y);
     }
 }

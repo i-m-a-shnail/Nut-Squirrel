@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: a1b2ea27d87a5d249a45be3b2e2f506f
+guid: b3d7eb1bc3f24c842a2c356d8b365577
 TextureImporter:
   fileIDToRecycleName:
-    21300000: avocadoSpin_0
-    21300002: avocadoSpin_1
-    21300004: avocadoSpin_2
-    21300006: avocadoSpin_3
-    21300008: avocadoSpin_4
-    21300010: avocadoSpin_5
-    21300012: avocadoSpin_6
-    21300014: avocadoSpin_7
-    21300016: avocadoSpin_8
-    21300018: avocadoSpin_9
-    21300020: avocadoSpin_10
-    21300022: avocadoSpin_11
+    21300000: coin_0
+    21300002: coin_1
+    21300004: coin_2
+    21300006: coin_3
+    21300008: coin_4
+    21300010: coin_5
+    21300012: coin_6
+    21300014: coin_7
+    21300016: coin_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -107,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: avocadoSpin_0
+      name: coin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2732
-        width: 1975
-        height: 2264
+        x: 36
+        y: 406
+        width: 128
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,19 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac7a27fbb8f6feb499c963cbb1201bc8
+      spriteID: 9b948b341a69cfb4da834fb40f0f1465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_1
+      name: coin_1
       rect:
         serializedVersion: 2
-        x: 2967
-        y: 2725
-        width: 1539
-        height: 2270
+        x: 236
+        y: 406
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,19 +138,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a450695afc1f7419a76455db82042e
+      spriteID: 96a358239ce08b64b900674f31e70d56
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_2
+      name: coin_2
       rect:
         serializedVersion: 2
-        x: 5823
-        y: 2719
-        width: 1310
-        height: 2337
+        x: 436
+        y: 406
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbc41aaf6e637404b915241467611eaf
+      spriteID: c19e4c6a50983d54e8de29d558c3edbe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_3
+      name: coin_3
       rect:
         serializedVersion: 2
-        x: 8545
-        y: 2732
-        width: 1317
-        height: 2324
+        x: 36
+        y: 218
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,19 +178,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0309cd3124f40c84ba227a58c6500b75
+      spriteID: 16e1aae29d4bdb54e887688861b99f10
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_4
+      name: coin_4
       rect:
         serializedVersion: 2
-        x: 11140
-        y: 2732
-        width: 1886
-        height: 2269
+        x: 236
+        y: 218
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,19 +198,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4c48a17d9bdfa4da36d3cefd10615a
+      spriteID: 4a2afcf79c4d2e645841a816e025b712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_5
+      name: coin_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 1663
-        height: 2264
+        x: 436
+        y: 218
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,19 +218,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95923f7fc8d798940b98ebd13911bdbb
+      spriteID: 787398e20ae37734398c99e77f37b583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_6
+      name: coin_6
       rect:
         serializedVersion: 2
-        x: 3082
-        y: 16
-        width: 1310
-        height: 2269
+        x: 36
+        y: 30
+        width: 128
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,19 +238,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9260c38166aa1874ca800a1fc18a94d8
+      spriteID: f267e9a3f529cc248956c556a47e05c8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_7
+      name: coin_7
       rect:
         serializedVersion: 2
-        x: 5626
-        y: 0
-        width: 1533
-        height: 2261
+        x: 236
+        y: 30
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,19 +258,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ead76b6619833545ba386bf626ce68f
+      spriteID: 9bcb8693003edd141b56d48d68b94f3e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: avocadoSpin_8
+      name: coin_8
       rect:
         serializedVersion: 2
-        x: 8144
-        y: 0
-        width: 1985
-        height: 2267
+        x: 436
+        y: 30
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,27 +278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea6aaf52ba7baf94690e504a45969b72
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: avocadoSpin_9
-      rect:
-        serializedVersion: 2
-        x: 10778
-        y: 22
-        width: 2248
-        height: 2271
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc838b8a65ad6354ca1825381b08c141
+      spriteID: a5f24427b7847e344963d4a07ecbd6c7
       vertices: []
       indices: 
       edges: []
@@ -309,7 +286,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 215a639969d41a347818dc5c3f05f955
+    spriteID: cf6d27acfac3ed346a9fba66e1c7575a
     vertices: []
     indices: 
     edges: []

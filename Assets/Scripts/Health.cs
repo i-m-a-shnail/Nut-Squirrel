@@ -7,21 +7,21 @@ public class Health : MonoBehaviour {
 
     // Use this for initialization
     
-    [SerializeField] int health;
+    public int health;
     [SerializeField] int maxHealth=3;
     [SerializeField] Sprite fullHeart;
     [SerializeField] Sprite emptyHeart;
     [SerializeField] Image[] hearts;
 	void Start () {
-        Player player = GetComponent<Player>();
-        health = player.getHealth();
+        health = maxHealth;
+       
         
 
 	}
 
     public void RemoveLife()
     {
-        if (maxHealth - health == 1)
+        if (health>=1)
         {
             hearts[health - 1].sprite = emptyHeart;
             health--;
